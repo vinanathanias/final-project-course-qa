@@ -27,7 +27,7 @@ pipeline {
                 // Gunakan blok try-catch agar post-build actions tetap berjalan
                 script {
                     try {
-                        sh 'npx cypress run --spec "cypress/e2e/features/*.feature"'
+                        sh 'npx cypress run --spec "cypress/features/*.feature"'
                     } catch (e) {
                         echo "Tes Cypress gagal, tapi kita akan lanjutkan untuk mempublikasikan laporan."
                         // Menandai build sebagai UNSTABLE jika tes gagal
