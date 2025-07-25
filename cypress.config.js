@@ -20,7 +20,7 @@ module.exports = defineConfig({
       embeddedScreenshots: true,    // Embed screenshots for failed tests directly in the report
       inlineAssets: true,           // All assets (CSS, JS) are bundled in the HTML file
                               saveAllAttempts: false,       // Do not save screenshots/videos of passed tests on retry
-                              overwrite: false,             // Do not overwrite old reports
+                              overwrite: true,             // Do not overwrite old reports
                               html: true,                   // Generate an HTML report
                               json: true,                   // Generate a JSON file for the report
     },
